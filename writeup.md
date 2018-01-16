@@ -115,7 +115,7 @@ I implemented this step in code cell 13 in `Advanced_Lane_Lines.ipynb` in the fu
 
 ### Pipeline (video)
 
-Here's a [link to my video result](./output_images/project_video.mp4) and [link to my challenge video result](./output_images/challenge_video_output.mp4)
+Here's a [link to my video result](https://github.com/shivaniRe/CarND-Advanced-Lane-Lines/blob/master/output_images/project_video_output.mp4) and [link to my challenge video result](https://github.com/shivaniRe/CarND-Advanced-Lane-Lines/blob/master/output_images/challenge_video_output.mp4)
 
 ---
 
