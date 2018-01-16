@@ -41,7 +41,6 @@ The code for this step is contained in the third code cell of the IPython notebo
 I start by preparing "object points", which will be the (x, y, z) coordinates of the chessboard corners in the world. Here I am assuming the chessboard is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `obj_points` will be appended with a copy of it every time I successfully detect all chessboard corners in a test image.  `img_points` will be appended with the (x, y) pixel position of each of the corners in the image plane with each successful chessboard detection.  
 
 I then used the output `obj_points` and `img_points` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
-
 ![alt text][image1]
 
 ### Pipeline (single images)
@@ -49,21 +48,17 @@ I then used the output `obj_points` and `img_points` to compute the camera calib
 #### 1. Distortion correction of image.
 
 To undistort a test image, I used the 'obj_points' and 'img_points' calculated in the previous step and applied them on the test image. The sample undistorted image looks like this one: 
-
 ![alt text][image2]
 
 #### 2. Create a thresholded binary image. 
 
 I tried different combinations of color and gradient thresholds. First I tried a combination of absolute threshold, magnitude of gradient and direction of gradient on a gray image. Here's an example of this step.
-
 ![alt text][image3]
 
 Then I applied the same on s_channel image and here's an example of that (code for this is in code cells 5 and 6 of "Advanced_Lane_Lines.ipynb").
-
 ![alt text][image4]
 
 In the end I combined color and gradient thresholds to generate a binary image (thresholding steps in code cell 7 of "Advanced_Lane_Lines.ipynb").  Here's an example of my output for this step.  
-
 ![alt text][image5]
 
 #### 3. Perspective transform of an image.
@@ -94,11 +89,9 @@ This resulted in the following source and destination points:
 | 1280, 720     | 1280, 720     |
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
-
 ![alt text][image6]
 
 Below is an example of warped binary image.
-
 ![alt text][image7]
 
 #### 4. Identifying lane-line pixels and fitting their positions with a polynomial
@@ -106,7 +99,6 @@ Below is an example of warped binary image.
 Once I generated the warped binary image, I took histogram along all the columns of the lower half of the image. The two most prominent peaks in this histogram are good indicators of the x-positions of the lane lines. I used that as a starting point for where to search for the lines. I then used a sliding window, placed around the line centers, to find and follow the lines up to the top of the frame.
 
 Lastly, I used the x and y pixels positions to fit my lane lines with a 2nd order polynomial kinda like this:
-
 ![alt text][image8]
 ![alt text][image9]
 
@@ -117,7 +109,6 @@ I calculated radius of curvature in pixel space in code cells 10 and 11 in "Adva
 #### 6. Result plotted back down onto the road such that the lane area is identified clearly.
 
 I implemented this step in code cell 13 in `Advanced_Lane_Lines.ipynb` in the function `draw_lanes()`.  Here is an example of my result on a test image:
-
 ![alt text][image10]
 
 ---
