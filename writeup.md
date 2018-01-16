@@ -30,11 +30,7 @@ The goals / steps of this project are the following:
 
 ---
 
-### Writeup / README
-
 ### Camera Calibration
-
-#### 1. Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
 The code for this step is contained in the third code cell of the IPython notebook located in "Advanced_Lane_Lines.ipynb".  
 
