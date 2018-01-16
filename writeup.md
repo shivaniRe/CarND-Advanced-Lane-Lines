@@ -14,15 +14,15 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./output_images/Undistortion of Image.png "Undistorted"
-[image2]: ./output_images/Undistorted Test Image.png "Road Transformed"
-[image3]: ./output_images/Combining Thresholds on Grayscale Image.png "Binary Example (Gray)"
-[image4]: ./output_images/Combining Thresholds on S_Channel Image.png "Binary Example (S-channel)"
-[image5]: ./output_images/Combining S_Channel and Gradient Thresholds.png "Binary Example"
-[image6]: ./output_images/Perspective Transform of Original Image.png "Warp Example"
-[image7]: ./output_images/Perspective Transform of Combined Image.png "Warp Example"
-[image8]: ./output_images/VIsualization of sliding windows.png "Sliding Window"
-[image9]: ./output_images/Sliding Window Alternative.png "Fit Visual"
+[image1]: ./output_images/Undistortion_of_Image.png "Undistorted"
+[image2]: ./output_images/Undistorted_Test_Image.png "Road Transformed"
+[image3]: ./output_images/Combining_Thresholds_on_Grayscale_Image.png "Binary Example (Gray)"
+[image4]: ./output_images/Combining_Thresholds_on_SChannel_Image.png "Binary Example (S-channel)"
+[image5]: ./output_images/Combining_SChannel_and_Gradient_Thresholds.png "Binary Example"
+[image6]: ./output_images/Perspective_Transform_of_Original Image.png "Warp Example"
+[image7]: ./output_images/Perspective_Transform_of_Combined Image.png "Warp Example"
+[image8]: ./output_images/VIsualization_of_sliding_windows.png "Sliding Window"
+[image9]: ./output_images/Sliding_Window_Alternative.png "Fit Visual"
 [image10]: ./output_images/example_output.png "Output"
 [video1]: ./output_images/project_video_output.mp4 "Video"
 
