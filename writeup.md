@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 [image2]: ./output_images/Undistorted_Test_Image.png "Road Transformed"
 [image3]: ./output_images/Combining_Thresholds_on_Grayscale_Image.png "Binary Example (Gray)"
 [image4]: ./output_images/Combining_Thresholds_on_SChannel_Image.png "Binary Example (S-channel)"
-[image5]: ./output_images/Combining_SChannel_and_Gradient_Thresholds.png "Binary Example"
+[image5]: ./output_images/Combining l of HLS and b of LAB Gradient Thresholds.png "Binary Example"
 [image6]: ./output_images/Perspective_Transform_of_Original_Image.png "Warp Example"
 [image7]: ./output_images/Perspective_Transform_of_Combined_Image.png "Warp Example"
 [image8]: ./output_images/VIsualization_of_sliding_windows.png "Sliding Window"
