@@ -14,7 +14,7 @@
 [image10]: ./output_images/example_output.png "Output"
 [video1]: ./output_images/project_video_output.mp4 "Video"
 
-This is the fourth project of Udacity Self-driving-cars nanodegree and the goals / steps of this project are the following:
+The goals / steps of this project are the following:
 
 * Compute the camera calibration matrix and distortion coefficients given a set of chessboard images.
 * Apply a distortion correction to raw images.
